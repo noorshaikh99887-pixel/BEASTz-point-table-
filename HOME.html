@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Esports Generator (Final WhatsApp Fix)</title>
     
+    <script type="text/javascript">
+        (function (l) {
+          if (l.search[1] === "/") {
+            var decoded = l.search
+              .slice(1)
+              .split("&")
+              .map(function (s) {
+                return s.replace(/~and~/g, "&");
+              })
+              .join("?");
+            window.history.replaceState(
+              null,
+              null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+            );
+          }
+        })(window.location);
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bangers&family=Bebas+Neue&family=Black+Han+Sans&family=Black+Ops+One&family=Bungee&family=Carter+One&family=Chakra+Petch:wght@400;600;700&family=Concert+One&family=Creepster&family=Days+One&family=Fjalla+One&family=Fredoka:wght@400;600;700&family=Fugaz+One&family=Grenze+Gotisch:wght@400;600;700&family=Hammersmith+One&family=Jura:wght@400;600;700&family=Kanit:wght@400;600;700&family=Luckiest+Guy&family=Monoton&family=Orbitron:wght@400;600;700&family=Oswald:wght@400;600;700&family=Passion+One&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Quantico:wght@400;700&family=Racing+Sans+One&family=Rajdhani:wght@500;600;700&family=Righteous&family=Rowdies:wght@400;700&family=Russo+One&family=Saira+Stencil+One&family=Shojumaru&family=Sigmar+One&family=Teko:wght@400;600;700&family=Titan+One&family=Ultra&family=Wallpoet&display=swap" rel="stylesheet">
